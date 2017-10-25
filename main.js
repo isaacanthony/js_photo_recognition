@@ -67,4 +67,8 @@ var ops = require('ndarray-ops');
     reader.onload = function() { process(reader.result); };
     reader.readAsDataURL(evt.target.files[0]);
   };
+
+  document.querySelector('.thumbnail').addEventListener('click', function() {
+    $('.upload').click();
+  });
 })();

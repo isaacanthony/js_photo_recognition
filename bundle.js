@@ -68,6 +68,10 @@ var ops = require('ndarray-ops');
     reader.onload = function() { process(reader.result); };
     reader.readAsDataURL(evt.target.files[0]);
   };
+
+  document.querySelector('.thumbnail').addEventListener('click', function() {
+    $('.upload').click();
+  });
 })();
 
 },{"ndarray":7,"ndarray-ops":2}],2:[function(require,module,exports){

@@ -40,7 +40,7 @@ var ops = require('ndarray-ops');
                    .filter(function(obj) { return obj.probability > 0.3; })
                    .map(function(obj) { return obj.name.replace('_', ' '); })
                    .join('<br>');
-      document.querySelector('.output').innerHTML = text;
+      document.querySelector('.output').innerHTML = text || 'unknown';
     })
     .catch(function(err) {
       console.log(err);
